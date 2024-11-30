@@ -17,10 +17,10 @@ public class PlayerAnimation : MonoBehaviour
         animator = GetComponent<Animator>();
 
         float result1 = Vector2.SignedAngle(Vector2.up, Vector2.right);
-        Debug.Log("R1 " + result1);
+        
 
         float result2 = Vector2.SignedAngle(Vector2.up, Vector2.left);
-        Debug.Log("R2 " + result2);
+        
     }
     public void SetDirection(Vector2 _direction)
     {
@@ -39,7 +39,7 @@ public class PlayerAnimation : MonoBehaviour
     
         }
         
-        Debug.Log($"Playing : {directionArray[lastDirection]}");
+        
         animator.Play(directionArray[lastDirection]);
     }
 
@@ -66,34 +66,10 @@ public class PlayerAnimation : MonoBehaviour
 
     }
 
-    /*private void UpdateAnimation()
-    {
-        Vector2 direction = transform.position;
-        float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //para que detecte el angulo de inclinación 
-        animator.SetFloat("angle", angle);
-
-        if (Input.GetKeyDown(KeyCode.W)) { directionY += -1; }
-        if (Input.GetKeyDown(KeyCode.A)) { directionX += -1; }
-        if (Input.GetKeyDown(KeyCode.S)) { directionY += 1; }
-        if (Input.GetKeyDown(KeyCode.D)) { directionX += 1; }
-
-    }*/
-
-    /* public void RestartWASD()
-     {
-         animator.SetBool("WASD", false);
-     }*/
 
     // Update is called once per frame
     void Update()
     {
     
-        /*
-        UpdateAnimation();
-
-        if (Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.A) && Input.GetKeyDown(KeyCode.S) && Input.GetKeyDown(KeyCode.D))
-        {
-            animator.SetBool("WASD", true);
-        }*/
     }
 }
