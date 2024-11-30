@@ -12,9 +12,10 @@ public class PlayerManager : MonoBehaviour
 {
 
     [SerializeField] public float playerSpeed = 5f;
-    public Animator chestAnimator;
     private LifeManager lifeManager;
     public Animator[] heartAnimators;
+    public Vector2 direction;
+    public GameObject gameOverPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +28,14 @@ public class PlayerManager : MonoBehaviour
     {
         float horizontalMovement = Input.GetAxis("Horizontal");
         float verticalMovement = Input.GetAxis("Vertical");
-
-        Vector2 direction = new Vector2(horizontalMovement, verticalMovement) * playerSpeed * Time.deltaTime;
-        transform.Translate(direction);
-        FindObjectOfType<PlayerAnimation>().SetDirection(direction);
+        var _direction = new Vector2(horizontalMovement, verticalMovement);
+        if (_direction != Vector2.zero)
+        {
+            direction = _direction;
+        }
+        Vector2 moveOffset = _direction * playerSpeed * Time.deltaTime;
+        transform.Translate(moveOffset);
+        FindObjectOfType<PlayerAnimation>().SetDirection(moveOffset);
 
 
     }
@@ -47,8 +52,8 @@ public class PlayerManager : MonoBehaviour
         // Verificamos si el objeto con el que el jugador colide es el cofre
         if (other.CompareTag("Chest"))  // Asegúrate de que el cofre tenga el tag "Coffin"
         {
+            other.gameObject.GetComponent<Animator>().SetBool("Collision", true);
             // Activamos la animación del cofre usando un Trigger
-            chestAnimator.SetBool("Collision", true);  // Activamos el trigger "OpenCoffin" en el Animator
 
         }
 
@@ -80,6 +85,11 @@ public class PlayerManager : MonoBehaviour
             {
                 
                 heartAnimators[newHealth].SetInteger("LifeChange", -1);
+            }
+
+            if (newHealth == 0)
+            {
+                gameOverPanel.SetActive(true);
             }
         }
     }
