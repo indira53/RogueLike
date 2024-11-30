@@ -12,11 +12,12 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] public float playerSpeed = 5f;
     public Animator chestAnimator;
+    public LifeManager lifeManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        lifeManager = GetComponent<LifeManager>();
     }
 
     private void PlayerMovement()
@@ -38,12 +39,13 @@ public class PlayerManager : MonoBehaviour
         
     }
 
+
     private void OnTriggerEnter2D(Collider2D other) // Usamos Collider2D para 2D
     {
         // Verificamos si el objeto con el que el jugador colide es el cofre
-        if (other.CompareTag("Chest"))  // Asegúrate de que el cofre tenga el tag "Coffin"
+        if (other.CompareTag("Chest"))  // Asegï¿½rate de que el cofre tenga el tag "Coffin"
         {
-            // Activamos la animación del cofre usando un Trigger
+            // Activamos la animaciï¿½n del cofre usando un Trigger
             chestAnimator.SetBool("Collision", true);  // Activamos el trigger "OpenCoffin" en el Animator
 
         }
@@ -63,6 +65,12 @@ public class PlayerManager : MonoBehaviour
                     SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetSceneByName("MainScene"));
                     break;
             }
+        }
+
+        if (other.CompareTag("Enemy"))
+        {
+            
+            
         }
     }
 
