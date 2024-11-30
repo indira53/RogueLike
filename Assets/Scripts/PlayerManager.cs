@@ -2,6 +2,7 @@ using System.CodeDom.Compiler;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.PlasticSCM.Editor.WebApi;
 using Unity.VisualScripting;
 using UnityEditor.SearchService;
 using UnityEngine;
@@ -12,11 +13,14 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] public float playerSpeed = 5f;
     public Animator chestAnimator;
+    private LifeManager lifeManager;
+    public Animator[] heartAnimators;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        lifeManager = GetComponent<LifeManager>();
+
     }
 
     private void PlayerMovement()
@@ -64,7 +68,19 @@ public class PlayerManager : MonoBehaviour
                     break;
             }
         }
+
+        if (other.CompareTag("Enemy"))  
+        {
+            var currentHealth = lifeManager.Health;
+            lifeManager.Health -= 1;
+            var newHealth = lifeManager.Health;
+            Debug.Log($"Vida: {currentHealth} -> {newHealth}");
+
+            if (currentHealth > newHealth)
+            {
+                
+                heartAnimators[newHealth].SetInteger("LifeChange", -1);
+            }
+        }
     }
-
-
 }
