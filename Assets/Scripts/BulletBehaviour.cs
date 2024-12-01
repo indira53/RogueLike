@@ -17,23 +17,20 @@ public class BulletBehaviour : MonoBehaviour
     void Update()
     {
         shootedTime += Time.deltaTime;
-        Debug.Log(shootedTime);
+        // Debug.Log(shootedTime);
         if (bulletTime <= shootedTime)
         {
-            DestroyBullet();
+            Destroy(this.gameObject);
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(collision.gameObject);
-        DestroyBullet();
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(this.gameObject);
+        }
+           
     }
-
-    private void DestroyBullet()
-    {
-        Destroy(this.gameObject);
-    }
-
 }
     

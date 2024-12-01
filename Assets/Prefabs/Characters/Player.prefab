@@ -298,7 +298,6 @@ MonoBehaviour:
   - Walk Right Down
   - Walk Right
   - Walk Right Up
-  direction: {x: 0, y: 0}
 --- !u!114 &7302968617231980022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,9 +313,11 @@ MonoBehaviour:
   playerSpeed: 5
   heartAnimators:
   - {fileID: 2764890491113873783, guid: de885be86cb61dd4ea472a6a6476e2ea, type: 3}
-  - {fileID: 6287152700496977839, guid: 4c4b7ecdef0817346a04d03477f63167, type: 3}
-  - {fileID: 1364661709631460525, guid: df75325390ec2334aa5e57f4c76ee46f, type: 3}
-  direction: {x: 0, y: 0}
+  - {fileID: 2764890491113873783, guid: de885be86cb61dd4ea472a6a6476e2ea, type: 3}
+  - {fileID: 2764890491113873783, guid: de885be86cb61dd4ea472a6a6476e2ea, type: 3}
+  angle: 0
+  directionIndex: 0
+  moving: 0
   gameOverPanel: {fileID: 0}
 --- !u!61 &2973313718607065368
 BoxCollider2D:

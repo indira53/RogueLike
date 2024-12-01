@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6157420476381038031}
   - component: {fileID: -1496978615261216697}
   - component: {fileID: 3290840302026101952}
+  - component: {fileID: -3466188360931277844}
   m_Layer: 0
   m_Name: Sprout
   m_TagString: Enemy
@@ -194,8 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ceb1f33f62dcd344a3caf8b2da30491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  StartingHealth: 3
+  maxHealth: 1
+  StartingHealth: 1
 --- !u!114 &3290840302026101952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,3 +211,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 25
   spawnAmount: 3
+  playerTransform: {fileID: 0}
+--- !u!195 &-3466188360931277844
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698446292500368864}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5555556
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.3333334
+  m_BaseOffset: 0.6666667
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7272306896125387563}
   - component: {fileID: 4120512821230713400}
   - component: {fileID: -9178313258925832055}
+  - component: {fileID: -3161810696310396879}
   m_Layer: 0
   m_Name: SkeeletonSeeker
   m_TagString: Enemy
@@ -210,3 +211,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 2
   spawnAmount: 1
+  player: {fileID: 2130751344926736802, guid: fc632a5f4ff62114aacacda73182f1b3, type: 3}
+--- !u!195 &-3161810696310396879
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973100748287294704}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.3142858
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2.3714285
+  m_BaseOffset: 1.1857142
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

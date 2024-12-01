@@ -9,8 +9,9 @@ using Random = UnityEngine.Random;
 public class EnemySpawner : MonoBehaviour
 {
     public List<GameObject> enemyPrefabs;
-    public Camera camera;
+    public Camera _camera;
     private Dictionary<GameObject, EnemyBehaviour> EnemyDatas;
+    [NonSerialized]public GameObject player;
 
 
     // Start is called before the first frame update
@@ -33,10 +34,11 @@ public class EnemySpawner : MonoBehaviour
             {
                 if (Random.Range(0f, 100f) <= enemyData.spawnRate)
                 {
-                    Debug.Log($"He spawneado algo");
-                    Instantiate(enemyPrefab,
+                    // Debug.Log($"He spawneado algo");
+                    var enemy = Instantiate(enemyPrefab,
                         GetRandomSpawnPosition(),
                         Quaternion.identity);
+                    enemy.GetComponent<EnemyBehaviour>().playerTransform = player.transform;
                 }
             }
 
@@ -52,7 +54,7 @@ public class EnemySpawner : MonoBehaviour
         var y = Random.Range(-0.3f, 0.3f);
         if (y > 0) y += 1f;
 
-        return camera.ViewportToWorldPoint(new Vector2(x, y));
+        return _camera.ViewportToWorldPoint(new Vector2(x, y));
 
 
     }
