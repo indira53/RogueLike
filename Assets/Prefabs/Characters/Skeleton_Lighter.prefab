@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 504408857779543768}
   - component: {fileID: 5660700283581357371}
   - component: {fileID: 94576772943136112}
+  - component: {fileID: -3169327510861885040}
+  - component: {fileID: -3289544632024186508}
   m_Layer: 0
   m_Name: Skeleton_Lighter
   m_TagString: Enemy
@@ -180,3 +182,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-3169327510861885040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969249737720874945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ceb1f33f62dcd344a3caf8b2da30491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  StartingHealth: 10
+--- !u!114 &-3289544632024186508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969249737720874945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fffb4cc665ce341b7db29cfa4ffe5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 2
+  spawnAmount: 1

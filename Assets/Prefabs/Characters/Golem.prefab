@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8550325762516680868}
   - component: {fileID: 7169693082395646883}
   - component: {fileID: 3840802348038779416}
+  - component: {fileID: 5583949566094154420}
+  - component: {fileID: 6948529154060134986}
   m_Layer: 0
   m_Name: Golem
   m_TagString: Enemy
@@ -180,3 +182,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5583949566094154420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248039268560711244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fffb4cc665ce341b7db29cfa4ffe5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 2
+  spawnAmount: 1
+--- !u!114 &6948529154060134986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248039268560711244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ceb1f33f62dcd344a3caf8b2da30491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  StartingHealth: 10

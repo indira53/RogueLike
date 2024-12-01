@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5244624307973788163}
   - component: {fileID: 917078755233155401}
   - component: {fileID: 6157420476381038031}
+  - component: {fileID: -1496978615261216697}
+  - component: {fileID: 3290840302026101952}
   m_Layer: 0
   m_Name: Sprout
   m_TagString: Enemy
@@ -180,3 +182,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-1496978615261216697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698446292500368864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ceb1f33f62dcd344a3caf8b2da30491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  StartingHealth: 3
+--- !u!114 &3290840302026101952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698446292500368864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fffb4cc665ce341b7db29cfa4ffe5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 25
+  spawnAmount: 3

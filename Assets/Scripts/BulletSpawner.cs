@@ -32,7 +32,6 @@ public class BulletSpawner : MonoBehaviour
 
     void Shoot()
     {
-        //Instanciar el prefab del proyectil en el punto de disparo y la misma rotación de la nave
         GameObject proyectil = Instantiate(bulletPrefab, bulletSpawner.position, Quaternion.Euler(player.GetComponent<PlayerManager>().direction));
 
         //Añadir velocidad al proyectil
