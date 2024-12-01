@@ -10,16 +10,16 @@ public class EnemySpawner : MonoBehaviour
 {
     public List<GameObject> enemyPrefabs;
     public Camera camera;
-    private Dictionary<GameObject, EnemyData> EnemyDatas;
+    private Dictionary<GameObject, EnemyBehaviour> EnemyDatas;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        EnemyDatas = new Dictionary<GameObject, EnemyData>();
+        EnemyDatas = new Dictionary<GameObject, EnemyBehaviour>();
         foreach (var enemyPrefab in enemyPrefabs)
         {
-            EnemyDatas[enemyPrefab] = enemyPrefab.GetComponent<EnemyData>();
+            EnemyDatas[enemyPrefab] = enemyPrefab.GetComponent<EnemyBehaviour>();
         }
         InvokeRepeating(nameof(SpawnEnemies), 0.0f, 1f);
     }
