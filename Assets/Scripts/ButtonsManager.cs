@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class ButtonsManager : MonoBehaviour
 {
-    public Button tryAgainButton;
-    public GameObject gameOverPanel;
+    //public Button tryAgainButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +19,9 @@ public class ButtonsManager : MonoBehaviour
         
     }
 
-    public void OnClickTryAgainButton(Button button)
+    public void loadScene1()
     {
-        SceneManager.LoadScene("MainScene");
-        gameOverPanel.SetActive(false);
-
+        Debug.Log("boton");
+        SceneManager.LoadScene("Scene1");
     }
 }

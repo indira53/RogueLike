@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8aa64649c95056c4bbb8b2281bff8afc
+guid: ff4ee34fc1ba8504681fda6f86bf7350
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -110,7 +110,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: skeleton_seeker_death_0
+      name: Old_Guardian_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e86bcad586ca0498ea8353616537b4
+      internalID: 326840347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_death_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e1ee9922aa8714c848dd13fceac7ca
+      internalID: -1892200784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_death_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccc99b4a25194f49b76b0b7924bffb8
+      internalID: 242232627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_death_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770b05183d7de6142931a51ffa05a157
+      internalID: 1855382093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_death_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c140e974324138c43b8344b16d72066e
+      internalID: 1991057574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_death_5
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e760ad3d431cea4cb7a1e5e535cd1ce
-      internalID: 168421950
+      spriteID: 9c8a0c4799aa10d439fa0e0faba97a14
+      internalID: -142222375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skeleton_seeker_death_1
+      name: Old_Guardian_death_6
       rect:
         serializedVersion: 2
         x: 0
@@ -145,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9d349bb3fff8ec4e9154095d6f6865e
-      internalID: 100757070
+      spriteID: 1db3b961aa89995429b1a7b2630d034a
+      internalID: 344811315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skeleton_seeker_death_2
+      name: Old_Guardian_death_7
       rect:
         serializedVersion: 2
         x: 0
@@ -166,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29d493fbaf3a0974da77331ff3531b30
-      internalID: -1022415514
+      spriteID: f54fdfc1e0eb9ed4c996ae7b3175ff5e
+      internalID: 1937763570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skeleton_seeker_death_3
+      name: Old_Guardian_death_8
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed31f39cfaa88534286e4fe2972bf1c4
-      internalID: -59450606
+      spriteID: a6cbbe9a50fad664a90aa0ee26462b54
+      internalID: -603981489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skeleton_seeker_death_4
+      name: Old_Guardian_death_9
       rect:
         serializedVersion: 2
         x: 0
@@ -208,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6925d1163add9504b8caedb1bd371c4a
-      internalID: 288388913
+      spriteID: ce7ccec14e2652c4a8861a743a310576
+      internalID: -1109810007
       vertices: []
       indices: 
       edges: []
@@ -225,11 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      skeleton_seeker_death_0: 168421950
-      skeleton_seeker_death_1: 100757070
-      skeleton_seeker_death_2: -1022415514
-      skeleton_seeker_death_3: -59450606
-      skeleton_seeker_death_4: 288388913
+      Old_Guardian_death_0: 326840347
+      Old_Guardian_death_1: -1892200784
+      Old_Guardian_death_2: 242232627
+      Old_Guardian_death_3: 1855382093
+      Old_Guardian_death_4: 1991057574
+      Old_Guardian_death_5: -142222375
+      Old_Guardian_death_6: 344811315
+      Old_Guardian_death_7: 1937763570
+      Old_Guardian_death_8: -603981489
+      Old_Guardian_death_9: -1109810007
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,10 +14,15 @@ public class EnemyBehaviour : MonoBehaviour
     private NavMeshAgent agente;
     private LifeManager lifeManager;
 
+    private Animator animator;
+
+    
+
     private void Awake()
     {
         agente = GetComponent<NavMeshAgent>();
         lifeManager = GetComponent<LifeManager>();
+        animator = GetComponent<Animator>();
 
     }
 
@@ -40,10 +45,15 @@ public class EnemyBehaviour : MonoBehaviour
             lifeManager.Health -= 1;
             if (lifeManager.Health == 0)
             {
-                Destroy(this.gameObject);
+                this.gameObject.GetComponent<Animator>().SetBool("Dead", true);
             }
         }
 
+    }
+
+    void DestroyThis()
+    {
+        Destroy(this.gameObject);
     }
 
 }

@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6955338752039257755
 Transform:
   m_ObjectHideFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 443319849718809755}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.605, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,7 +46,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6469007583455745849
 Transform:
   m_ObjectHideFlags: 0
@@ -311,14 +311,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 5
-  heartAnimators:
-  - {fileID: 2764890491113873783, guid: de885be86cb61dd4ea472a6a6476e2ea, type: 3}
-  - {fileID: 2764890491113873783, guid: de885be86cb61dd4ea472a6a6476e2ea, type: 3}
-  - {fileID: 2764890491113873783, guid: de885be86cb61dd4ea472a6a6476e2ea, type: 3}
   angle: 0
   directionIndex: 0
   moving: 0
-  gameOverPanel: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!61 &2973313718607065368
 BoxCollider2D:
   m_ObjectHideFlags: 0
