@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxOrbs: 2
-  orbCooldown: 4
+  orbCooldown: 1
   orbPrefab: {fileID: 1090637023488624810, guid: 07011b256ef5c944e953ee30af3dd79f, type: 3}
   orbRotatingSpeed: 5
   radius: 2
@@ -332,7 +332,6 @@ MonoBehaviour:
   angle: 0
   directionIndex: 0
   moving: 0
-  gameManager: {fileID: 0}
 --- !u!61 &2973313718607065368
 BoxCollider2D:
   m_ObjectHideFlags: 0

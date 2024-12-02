@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class Chronometer : MonoBehaviour
 {
@@ -10,6 +12,13 @@ public class Chronometer : MonoBehaviour
     [SerializeField] private TMP_Text _text;
     public static Chronometer instance;
 
+    private void Awake()
+    {
+        if(SceneManager.GetActiveScene().name == "Scene1")
+        {
+            StartTimer();
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

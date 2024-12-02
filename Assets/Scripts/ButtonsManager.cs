@@ -22,12 +22,10 @@ public class ButtonsManager : MonoBehaviour
     public void loadScene1()
     {
         SceneManager.LoadScene("Scene1");
-        Chronometer.instance.StartTimer();
     }
 
     public void startGame()
     { 
        SceneManager.LoadScene("Scene1");
-       Chronometer.instance.StartTimer();
     }
 }

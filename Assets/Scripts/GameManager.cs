@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     public GameObject playerPrefab;
     [NonSerialized] public GameObject player;
     public Animator[] heartAnimators;
-    public GameObject gameOverPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +18,7 @@ public class GameManager : MonoBehaviour
         Camera.main.GetComponent<ControlCamera>().playerTransform = player.transform;
         GetComponent<EnemySpawner>().player = player;
         GetComponent<WeaponsManager>().SetPlayer(player);
+
     }
     public void UpdateLifeDisplay(int currentHealth, int newHealth)
     {

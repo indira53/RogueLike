@@ -90,23 +90,20 @@ public class PlayerManager : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other) // Usamos Collider2D para 2D
+    private void OnTriggerEnter2D(Collider2D other)
     {
- 
-
         if (other.CompareTag("Door"))
         {
             Debug.Log("puerta");
-            SceneManager.GetActiveScene();
             switch (SceneManager.GetActiveScene().name)
             {
-                case "MainScene":
+                case "Scene1":
                     SceneManager.LoadScene("Scene2");
                     SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetSceneByName("Scene2"));
                     break;
                 case "Scene2":
-                    SceneManager.LoadScene("MainScene");
-                    SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetSceneByName("MainScene"));
+                    SceneManager.LoadScene("Scene1");
+                    SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetSceneByName("Scene1"));
                     break;
             }
         }
