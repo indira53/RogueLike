@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6955338752039257755}
+  - component: {fileID: 7949366822102774184}
   m_Layer: 0
   m_Name: OrbSpawner
   m_TagString: Untagged
@@ -31,6 +32,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2130751344926736802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7949366822102774184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443319849718809755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d2bdb5c6ec1dc449f79e6b94f6c3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxOrbs: 2
+  orbCooldown: 4
+  orbPrefab: {fileID: 1090637023488624810, guid: 07011b256ef5c944e953ee30af3dd79f, type: 3}
+  orbRotatingSpeed: 5
+  radius: 2
 --- !u!1 &4669133368070773318
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +128,7 @@ MonoBehaviour:
   player: {fileID: 7510275361415329221}
   bulletSpawner: {fileID: 1442221907905080042}
   bulletSpeed: 10
-  timeShoot: 2
+  timeShoot: 1
   refreshShoot: 0
   bulletLife: 3
 --- !u!1 &7510275361415329221

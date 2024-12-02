@@ -10,7 +10,7 @@ public class PlayerManager : MonoBehaviour
     public float angle;
     public int directionIndex;
     public bool moving;
-    public GameManager gameManager;
+    [NonSerialized] public GameManager gameManager;
     private PlayerAnimation _playerAnimation;
     [NonSerialized]
     public readonly Vector2[] Directions = {
@@ -92,13 +92,7 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) // Usamos Collider2D para 2D
     {
-        // Verificamos si el objeto con el que el jugador colide es el cofre
-        if (other.CompareTag("Chest"))  // Aseg�rate de que el cofre tenga el tag "Coffin"
-        {
-            other.gameObject.GetComponent<Animator>().SetBool("Collision", true);
-            // Activamos la animaci�n del cofre usando un Trigger
-
-        }
+ 
 
         if (other.CompareTag("Door"))
         {

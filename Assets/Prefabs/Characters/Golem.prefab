@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fffb4cc665ce341b7db29cfa4ffe5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 2
+  spawnRate: 5
   spawnAmount: 1
   playerTransform: {fileID: 0}
 --- !u!114 &6948529154060134986
@@ -210,8 +210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ceb1f33f62dcd344a3caf8b2da30491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  StartingHealth: 10
+  maxHealth: 3
+  StartingHealth: 3
 --- !u!195 &4074962979719946935
 NavMeshAgent:
   m_ObjectHideFlags: 0

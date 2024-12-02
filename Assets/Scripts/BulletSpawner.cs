@@ -34,7 +34,6 @@ public class BulletSpawner : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log($"Index -> {_playerManager.directionIndex}");
         var vector = _playerManager.GetDirectionVector();
         GameObject proyectil = Instantiate(bulletPrefab, bulletSpawner.position, Quaternion.Euler(0f, 0f, _playerManager.DirectionAngle()));
 

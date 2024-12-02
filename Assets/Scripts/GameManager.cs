@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         player.GetComponent<PlayerManager>().gameManager = this;
         Camera.main.GetComponent<ControlCamera>().playerTransform = player.transform;
         GetComponent<EnemySpawner>().player = player;
+        GetComponent<WeaponsManager>().SetPlayer(player);
     }
     public void UpdateLifeDisplay(int currentHealth, int newHealth)
     {
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
         if (newHealth == 0)
         {
             player.SetActive(false);
+            Chronometer.instance.StopTimer();
             SceneManager.LoadScene("GameOverScene");
         }
     }

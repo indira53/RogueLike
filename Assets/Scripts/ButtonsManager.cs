@@ -21,7 +21,13 @@ public class ButtonsManager : MonoBehaviour
 
     public void loadScene1()
     {
-        Debug.Log("boton");
         SceneManager.LoadScene("Scene1");
+        Chronometer.instance.StartTimer();
+    }
+
+    public void startGame()
+    { 
+       SceneManager.LoadScene("Scene1");
+       Chronometer.instance.StartTimer();
     }
 }
